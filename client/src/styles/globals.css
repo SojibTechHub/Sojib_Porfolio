@@ -1,0 +1,132 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  *, *::before, *::after {
+    transition: background-color 300ms ease, color 300ms ease, border-color 300ms ease;
+  }
+
+  :root {
+    --color-bg: #0A0A0F;
+    --color-surface: #111118;
+    --color-surface2: #0d0d15;
+    --color-border: #1e1e2e;
+    --color-accent: #818CF8;
+    --color-accent2: #A78BFA;
+    --color-text: #F1F5F9;
+    --color-muted: #64748B;
+  }
+
+  .light {
+    --color-bg: #FAFAFA;
+    --color-surface: #FFFFFF;
+    --color-surface2: #F8F7FF;
+    --color-border: #E2E8F0;
+    --color-accent: #6366F1;
+    --color-accent2: #8B5CF6;
+    --color-text: #0F172A;
+    --color-muted: #64748B;
+  }
+
+  body {
+    background-color: var(--color-bg);
+    color: var(--color-text);
+    overflow-x: hidden;
+  }
+
+  ::selection {
+    background-color: var(--color-accent);
+    color: white;
+  }
+
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+@layer components {
+  .glass {
+    background: rgba(17, 17, 24, 0.6);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid var(--color-border);
+  }
+  .light .glass {
+    background: rgba(255, 255, 255, 0.6);
+    border-color: var(--color-border);
+  }
+
+  .glass-strong {
+    background: rgba(17, 17, 24, 0.8);
+    backdrop-filter: blur(24px);
+    -webkit-backdrop-filter: blur(24px);
+    border: 1px solid var(--color-border);
+  }
+
+  .section-padding {
+    @apply px-4 sm:px-6 lg:px-8 py-20 md:py-28 max-w-7xl mx-auto;
+  }
+
+  .gradient-text {
+    background: linear-gradient(135deg, var(--color-accent), var(--color-accent2));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .gradient-border {
+    border: 1px solid transparent;
+    background-clip: padding-box;
+    position: relative;
+  }
+
+  .focus-ring {
+    @apply focus:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-accent)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--color-bg)] transition-all duration-200;
+  }
+
+  .line-clamp-2 {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  .line-clamp-3 {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  .shimmer {
+    background: linear-gradient(90deg, var(--color-border) 0%, var(--color-surface) 50%, var(--color-border) 100%);
+    background-size: 200% 100%;
+    animation: shimmer 2s ease-in-out infinite;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+@keyframes shimmer {
+  0% { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-bg);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-border);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-muted);
+}
