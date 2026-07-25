@@ -137,13 +137,20 @@ const ProjectCard = ({ project, onClick, index }: { project: Project; onClick: (
   </motion.div>
 );
 
+const toArray = (d: unknown): Project[] => {
+  if (Array.isArray(d)) return d as Project[];
+  if (d && typeof d === 'object' && 'data' in (d as object)) return toArray((d as { data: unknown }).data);
+  if (d && typeof d === 'object' && 'projects' in (d as object)) return toArray((d as { projects: unknown }).projects);
+  return [];
+};
+
 export const Projects = () => {
   const [filter, setFilter] = useState('all');
   const [selected, setSelected] = useState<Project | null>(null);
   const { ref, isVisible, variants } = useScrollAnimation('fade');
   const { data, isLoading } = useQuery({ queryKey: ['projects'], queryFn: getProjects, staleTime: 300000 });
 
-  const projects: Project[] = data || PROJECTS;
+  const projects: Project[] = isLoading ? [] : (toArray(data).length > 0 ? toArray(data) : PROJECTS);
   const filtered = filter === 'all' ? projects : projects.filter(p => p.category === filter);
   const featured = projects.filter(p => p.featured);
 

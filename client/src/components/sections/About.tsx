@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { MapPin, Calendar, Download, Github, Linkedin, Mail, Phone, Cake, GraduationCap, Briefcase } from 'lucide-react';
+import { MapPin, Download, Github, Linkedin, Mail, Phone, Cake, GraduationCap, Briefcase } from 'lucide-react';
 import { useScrollAnimation } from '../../hooks/useScrollAnimation';
 import { Button } from '../ui/Button';
 import { Badge } from '../ui/Badge';
@@ -45,21 +45,23 @@ export const About = () => {
         <div className="grid md:grid-cols-5 gap-8 lg:gap-12">
           <div className="md:col-span-2 space-y-6">
             <div className="glass rounded-3xl p-6 text-center shadow-[0_20px_60px_rgba(0,0,0,0.12)] border border-[var(--color-border)]/70">
-              <div className="relative mx-auto mb-5 w-32 h-32 sm:w-36 sm:h-36">
-                <div className="absolute inset-0 rounded-full bg-gradient-to-br from-[var(--color-accent)] via-purple-500 to-cyan-500 blur-xl opacity-30" />
-                <img
-                  src="/assets/images/profile-card.jpg"
-                  alt="Sojib Ahmed - MERN Stack Developer"
-                  className="relative w-full h-full rounded-full object-cover ring-4 ring-white/70 shadow-2xl shadow-[var(--color-accent)]/20"
-                  onError={(e) => {
-                    const target = e.target as HTMLImageElement;
-                    target.style.display = 'none';
-                    const parent = target.parentElement;
-                    if (parent) {
-                      parent.innerHTML = '<div class="relative w-full h-full rounded-full bg-gradient-to-br from-[var(--color-accent)] to-purple-500 flex items-center justify-center text-3xl font-display font-bold text-white">SA</div>';
-                    }
-                  }}
-                />
+              <div className="relative mx-auto mb-6 w-36 h-36 sm:w-44 sm:h-44">
+                <div className="absolute inset-0 rounded-full bg-gradient-to-br from-[var(--color-accent)] via-purple-500 to-cyan-500 blur-2xl opacity-40 animate-pulse-slow" />
+                <div className="absolute inset-1 rounded-full bg-gradient-to-br from-[var(--color-accent)] to-purple-600 p-1">
+                  <img
+                    src="/assets/images/profile-card.jpg"
+                    alt="Sojib Ahmed - MERN Stack Developer"
+                    className="w-full h-full rounded-full object-cover ring-2 ring-white/80 shadow-2xl shadow-[var(--color-accent)]/20"
+                    onError={(e) => {
+                      const target = e.target as HTMLImageElement;
+                      target.style.display = 'none';
+                      const parent = target.parentElement;
+                      if (parent) {
+                        parent.innerHTML = '<div class="w-full h-full rounded-full bg-gradient-to-br from-[var(--color-accent)] to-purple-500 flex items-center justify-center text-4xl font-display font-bold text-white">SA</div>';
+                      }
+                    }}
+                  />
+                </div>
               </div>
               <h3 className="text-xl font-display font-bold">Sojib Ahmed</h3>
               <Badge variant="accent" className="mt-2">MERN Stack Developer</Badge>
@@ -181,6 +183,26 @@ export const About = () => {
                     </li>
                   ))}
                 </ul>
+              </div>
+
+              <div>
+                <h3 className="text-lg font-display font-bold mb-4 flex items-center gap-2">
+                  <Briefcase size={18} className="text-[var(--color-accent)]" />
+                  Work Experience
+                </h3>
+                <div className="space-y-4">
+                  {[
+                    { role: 'Fullstack Developer (Freelance)', company: 'Self-Employed', period: '2024 — Present', desc: 'Building fullstack web applications for clients using React, Node.js, MongoDB, and modern web technologies.' },
+                    { role: 'Open Source Contributor', company: 'GitHub', period: '2024 — Present', desc: 'Contributing to open source projects and building personal projects to solve real-world problems.' },
+                  ].map((exp, i) => (
+                    <div key={i} className="relative pl-6 border-l-2 border-[var(--color-border)]">
+                      <div className="absolute left-[-5px] top-1 w-2 h-2 rounded-full bg-[var(--color-accent)]" />
+                      <h4 className="font-semibold">{exp.role}</h4>
+                      <p className="text-sm text-[var(--color-accent)]">{exp.company} · {exp.period}</p>
+                      <p className="text-sm text-[var(--color-muted)] mt-1">{exp.desc}</p>
+                    </div>
+                  ))}
+                </div>
               </div>
 
               <div>

@@ -10,7 +10,7 @@ export interface Project {
   liveUrl: string;
   githubUrl: string;
   caseStudyUrl: string;
-  category: 'fullstack' | 'frontend' | 'api' | 'opensource' | 'mobile';
+  category: string;
   featured: boolean;
   visible: boolean;
   order: number;

@@ -1,4 +1,4 @@
-import { useRef, useMemo } from 'react';
+import { useRef, useMemo, useState } from 'react';
 import { Canvas, useFrame } from '@react-three/fiber';
 import * as THREE from 'three';
 
@@ -71,10 +71,23 @@ const Mesh = () => {
   );
 };
 
+const FallbackGradient = () => (
+  <div className="absolute inset-0 -z-10 bg-gradient-to-br from-[var(--color-accent)]/10 via-purple-500/5 to-transparent" />
+);
+
 export const MeshGradient = () => {
+  const [hasError, setHasError] = useState(false);
+
+  if (typeof window === 'undefined' || hasError) return <FallbackGradient />;
+
   return (
     <div className="absolute inset-0 -z-10 opacity-30 md:opacity-50">
-      <Canvas camera={{ position: [0, 0, 4], fov: 45 }}>
+      <Canvas
+        camera={{ position: [0, 0, 4], fov: 45 }}
+        onCreated={({ gl }) => {
+          gl.domElement.addEventListener('webglcontextlost', () => setHasError(true));
+        }}
+      >
         <ambientLight intensity={0.5} />
         <pointLight position={[10, 10, 10]} />
         <Mesh />

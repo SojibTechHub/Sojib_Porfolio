@@ -16,19 +16,22 @@ export const CustomCursor = () => {
     const hoverOut = () => cursorRef.current?.classList.remove('scale-150', 'opacity-50');
 
     document.addEventListener('mousemove', move);
-    document.querySelectorAll('a, button, [data-cursor]').forEach(el => {
+    const els = document.querySelectorAll('a, button, [data-cursor]');
+    els.forEach(el => {
       el.addEventListener('mouseenter', hoverIn);
       el.addEventListener('mouseleave', hoverOut);
     });
 
     return () => {
       document.removeEventListener('mousemove', move);
-      document.querySelectorAll('a, button, [data-cursor]').forEach(el => {
+      els.forEach(el => {
         el.removeEventListener('mouseenter', hoverIn);
         el.removeEventListener('mouseleave', hoverOut);
       });
     };
   }, []);
+
+  if (typeof window !== 'undefined' && window.matchMedia('(max-width: 768px)').matches) return null;
 
   return (
     <div
