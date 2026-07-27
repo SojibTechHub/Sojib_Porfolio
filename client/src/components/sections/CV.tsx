@@ -8,7 +8,8 @@ import { SOCIAL_LINKS } from '../../utils/constants';
 export const CV = () => {
   const { ref, isVisible, variants } = useScrollAnimation('up');
 
-  const cvUrl = `${import.meta.env.VITE_API_URL || '/api'}/cv/download`;
+  const cvUrl = 'https://drive.google.com/uc?export=download&id=1I1BZGjOJ5R5G5ny-dEtg1-MXnZE4fIJU';
+  const cvViewUrl = 'https://drive.google.com/file/d/1I1BZGjOJ5R5G5ny-dEtg1-MXnZE4fIJU/view';
 
   return (
     <section id="cv" className="section-padding">

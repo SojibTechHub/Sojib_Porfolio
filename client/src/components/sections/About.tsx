@@ -94,7 +94,7 @@ export const About = () => {
                 ))}
               </div>
 
-              <a href={`${import.meta.env.VITE_API_URL || '/api'}/cv/download`} target="_blank" rel="noopener noreferrer">
+              <a href="https://drive.google.com/uc?export=download&id=1I1BZGjOJ5R5G5ny-dEtg1-MXnZE4fIJU" target="_blank" rel="noopener noreferrer">
                 <Button variant="outline" size="sm" icon={<Download size={16} />} className="w-full mt-5">
                   Download CV
                 </Button>
