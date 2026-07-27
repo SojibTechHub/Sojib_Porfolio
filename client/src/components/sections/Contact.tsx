@@ -162,7 +162,7 @@ export const Contact = () => {
                         key={b}
                         type="button"
                         onClick={() => setBudget(b === budget ? '' : b)}
-                        className={`px-4 py-2 rounded-xl text-sm font-medium transition-all duration-200 ${
+                        className={`px-3 sm:px-4 py-2 rounded-xl text-xs sm:text-sm font-medium transition-all duration-200 ${
                           budget === b
                             ? 'bg-[var(--color-accent)] text-white shadow-lg shadow-[var(--color-accent)]/20'
                             : 'bg-[var(--color-surface)] text-[var(--color-muted)] border border-[var(--color-border)] hover:border-[var(--color-accent)]'

@@ -159,12 +159,12 @@ export const Skills = () => {
         <p className="text-[var(--color-muted)] mb-8 max-w-2xl">A concise view of the technologies I use to design, build, and ship modern digital experiences.</p>
 
         <div className="mb-8 rounded-2xl border border-[var(--color-border)]/70 bg-[var(--color-surface)]/70 p-2 shadow-sm">
-          <div className="flex flex-wrap gap-2">
+          <div className="flex flex-nowrap md:flex-wrap gap-2 overflow-x-auto scrollbar-none snap-x snap-mandatory -mx-2 px-2 md:mx-0 md:px-0">
             {skillCategories.map((cat) => (
               <button
                 key={cat}
                 onClick={() => setActiveTab(cat)}
-                className={`rounded-xl px-4 py-2 text-sm font-medium transition-all duration-200 ${
+                className={`snap-start shrink-0 rounded-xl px-5 py-2.5 text-sm font-medium transition-all duration-200 whitespace-nowrap ${
                   activeTab === cat
                     ? 'bg-[var(--color-accent)] text-white shadow-lg shadow-[var(--color-accent)]/20'
                     : 'text-[var(--color-muted)] hover:bg-[var(--color-accent)]/10 hover:text-[var(--color-text)]'

@@ -170,12 +170,12 @@ export const Projects = () => {
           A selection of fullstack projects I have built. Each project represents real-world solutions.
         </p>
 
-        <div className="flex flex-wrap gap-2 mb-8">
+        <div className="flex flex-nowrap md:flex-wrap gap-2 mb-8 overflow-x-auto scrollbar-none snap-x snap-mandatory -mx-4 px-4 md:mx-0 md:px-0">
           {categories.map((cat) => (
             <button
               key={cat.value}
               onClick={() => setFilter(cat.value)}
-              className={`px-4 py-2 rounded-xl text-sm font-medium transition-all duration-200 ${
+              className={`snap-start shrink-0 px-4 py-2 rounded-xl text-sm font-medium transition-all duration-200 whitespace-nowrap ${
                 filter === cat.value
                   ? 'bg-[var(--color-accent)] text-white shadow-lg shadow-[var(--color-accent)]/20'
                   : 'bg-[var(--color-surface)] text-[var(--color-muted)] border border-[var(--color-border)] hover:border-[var(--color-accent)] hover:text-[var(--color-text)]'

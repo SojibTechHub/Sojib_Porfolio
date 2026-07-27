@@ -36,7 +36,7 @@ export const Hero = () => {
         <div className="w-px h-16 bg-gradient-to-b from-[var(--color-accent)] to-transparent mt-2" />
       </div>
 
-      <div className="flex md:hidden items-center justify-center gap-4 fixed bottom-8 left-1/2 -translate-x-1/2 z-20 bg-[var(--color-surface)]/80 backdrop-blur-lg rounded-2xl px-5 py-3 border border-[var(--color-border)] shadow-xl">
+      <div className="flex md:hidden items-center justify-center gap-4 fixed bottom-24 left-1/2 -translate-x-1/2 z-20 bg-[var(--color-surface)]/80 backdrop-blur-lg rounded-2xl px-5 py-3 border border-[var(--color-border)] shadow-xl">
         {[
           { icon: Github, href: SOCIAL_LINKS.github, label: 'GitHub' },
           { icon: Linkedin, href: SOCIAL_LINKS.linkedin, label: 'LinkedIn' },
