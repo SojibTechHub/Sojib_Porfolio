@@ -41,8 +41,8 @@ export const CV = () => {
                       <span className="flex items-center gap-1"><Cake size={12} /> July 7, 2008</span>
                     </div>
                   </div>
-                  <div className="flex-1 grid grid-cols-5 gap-6 mt-6">
-                    <div className="col-span-2 space-y-4">
+                  <div className="flex-1 grid grid-cols-1 lg:grid-cols-5 gap-6 mt-6">
+                    <div className="lg:col-span-2 space-y-4">
                       <div>
                         <h4 className="text-sm font-semibold text-[var(--color-muted)] uppercase tracking-wider mb-3">Skills</h4>
                         {[
@@ -70,7 +70,7 @@ export const CV = () => {
                         <p className="text-xs text-[var(--color-text)]">English (Professional working)</p>
                       </div>
                     </div>
-                    <div className="col-span-3 space-y-4">
+                    <div className="lg:col-span-3 space-y-4">
                       <div>
                         <h4 className="text-sm font-semibold text-[var(--color-muted)] uppercase tracking-wider mb-3">Experience</h4>
                         <div className="space-y-3">

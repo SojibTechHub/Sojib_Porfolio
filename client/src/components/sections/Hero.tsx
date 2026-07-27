@@ -36,6 +36,26 @@ export const Hero = () => {
         <div className="w-px h-16 bg-gradient-to-b from-[var(--color-accent)] to-transparent mt-2" />
       </div>
 
+      <div className="flex md:hidden items-center justify-center gap-4 fixed bottom-8 left-1/2 -translate-x-1/2 z-20 bg-[var(--color-surface)]/80 backdrop-blur-lg rounded-2xl px-5 py-3 border border-[var(--color-border)] shadow-xl">
+        {[
+          { icon: Github, href: SOCIAL_LINKS.github, label: 'GitHub' },
+          { icon: Linkedin, href: SOCIAL_LINKS.linkedin, label: 'LinkedIn' },
+          { icon: Mail, href: `mailto:${SOCIAL_LINKS.email}`, label: 'Email' },
+          { icon: MessageCircle, href: `tel:${SOCIAL_LINKS.phone}`, label: 'WhatsApp' },
+        ].map((s, i) => (
+          <a
+            key={s.label}
+            href={s.href}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="p-2.5 rounded-xl text-[var(--color-muted)] hover:text-[var(--color-accent)] hover:bg-[var(--color-accent)]/10 transition-all duration-200 active:scale-95"
+            aria-label={s.label}
+          >
+            <s.icon size={18} />
+          </a>
+        ))}
+      </div>
+
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
