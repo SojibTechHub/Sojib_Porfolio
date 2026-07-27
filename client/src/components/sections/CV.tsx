@@ -72,19 +72,6 @@ export const CV = () => {
                     </div>
                     <div className="lg:col-span-3 space-y-4">
                       <div>
-                        <h4 className="text-sm font-semibold text-[var(--color-muted)] uppercase tracking-wider mb-3">Experience</h4>
-                        <div className="space-y-3">
-                          {[
-                            { role: 'Fullstack Developer (Freelance)', company: 'Self-Employed', period: '2024 — Present' },
-                          ].map((exp, i) => (
-                            <div key={i}>
-                              <p className="text-sm font-semibold text-[var(--color-text)]">{exp.role}</p>
-                              <p className="text-xs text-[var(--color-accent)]">{exp.company} · {exp.period}</p>
-                            </div>
-                          ))}
-                        </div>
-                      </div>
-                      <div>
                         <h4 className="text-sm font-semibold text-[var(--color-muted)] uppercase tracking-wider mb-3">Education</h4>
                         <div className="space-y-3">
                           <div>

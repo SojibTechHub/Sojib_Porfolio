@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { MapPin, Download, Github, Linkedin, Mail, Phone, Cake, GraduationCap, Briefcase } from 'lucide-react';
+import { MapPin, Download, Github, Linkedin, Mail, Phone, Cake, GraduationCap } from 'lucide-react';
 import { useScrollAnimation } from '../../hooks/useScrollAnimation';
 import { Button } from '../ui/Button';
 import { Badge } from '../ui/Badge';
@@ -183,26 +183,6 @@ export const About = () => {
                     </li>
                   ))}
                 </ul>
-              </div>
-
-              <div>
-                <h3 className="text-lg font-display font-bold mb-4 flex items-center gap-2">
-                  <Briefcase size={18} className="text-[var(--color-accent)]" />
-                  Work Experience
-                </h3>
-                <div className="space-y-4">
-                  {[
-                    { role: 'Fullstack Developer (Freelance)', company: 'Self-Employed', period: '2024 — Present', desc: 'Building fullstack web applications for clients using React, Node.js, MongoDB, and modern web technologies.' },
-                    { role: 'Open Source Contributor', company: 'GitHub', period: '2024 — Present', desc: 'Contributing to open source projects and building personal projects to solve real-world problems.' },
-                  ].map((exp, i) => (
-                    <div key={i} className="relative pl-6 border-l-2 border-[var(--color-border)]">
-                      <div className="absolute left-[-5px] top-1 w-2 h-2 rounded-full bg-[var(--color-accent)]" />
-                      <h4 className="font-semibold">{exp.role}</h4>
-                      <p className="text-sm text-[var(--color-accent)]">{exp.company} · {exp.period}</p>
-                      <p className="text-sm text-[var(--color-muted)] mt-1">{exp.desc}</p>
-                    </div>
-                  ))}
-                </div>
               </div>
 
               <div>
