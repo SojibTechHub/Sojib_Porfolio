@@ -2,7 +2,7 @@
 
 # 🎨 Sojib Portfolio — Previous Version
 
-### *Full-Stack MERN Portfolio (Earlier Release)*
+### *Fullstack Portfolio (Earlier Release)*
 
 ![React](https://img.shields.io/badge/React-19-61DAFB?style=for-the-badge&logo=react&logoColor=black)
 ![TypeScript](https://img.shields.io/badge/TypeScript-5-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
@@ -15,7 +15,7 @@
 
 ## 📖 Overview
 
-This is the earlier version of the Sojib Ahmed portfolio website. Built with the same MERN stack as the newer version but with fewer commits and features. See [Sojib-Ahmed-Portfolio](https://github.com/sojibahmedshorif25-ai/Sojib-Ahmed-Portfolio) for the latest version.
+This is the earlier version of the Sojib Ahmed portfolio website. Built with the same fullstack (React + Node.js + MongoDB) foundation as the newer version but with fewer commits and features. See [Sojib-Ahmed-Portfolio](https://github.com/sojibahmedshorif25-ai/Sojib-Ahmed-Portfolio) for the latest version.
 
 ---
 

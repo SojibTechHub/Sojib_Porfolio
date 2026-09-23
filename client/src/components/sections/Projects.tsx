@@ -25,7 +25,7 @@ const PROJECTS = [
     title: 'Job Finder Platform',
     slug: 'job-finder-platform',
     description: 'A fullstack job search and recruitment platform where employers can post jobs and candidates can apply.',
-    longDescription: '<p>A comprehensive job search and recruitment platform built with the MERN stack. Employers can create company profiles, post job listings, and manage applications. Job seekers can create profiles, upload resumes, search and filter jobs, and apply with one click.</p><h3>Key Features</h3><ul><li>User authentication (Employer & Job Seeker roles)</li><li>Job posting with rich text descriptions</li><li>Resume upload and management</li><li>Advanced job search and filtering</li><li>Real-time application tracking</li><li>Responsive design</li></ul>',
+    longDescription: '<p>A comprehensive job search and recruitment platform built end-to-end with React, Node.js and MongoDB. Employers can create company profiles, post job listings, and manage applications. Job seekers can create profiles, upload resumes, search and filter jobs, and apply with one click.</p><h3>Key Features</h3><ul><li>User authentication (Employer & Job Seeker roles)</li><li>Job posting with rich text descriptions</li><li>Resume upload and management</li><li>Advanced job search and filtering</li><li>Real-time application tracking</li><li>Responsive design</li></ul>',
     techStack: ['React', 'Node.js', 'MongoDB', 'Express', 'JWT', 'Tailwind CSS'],
     images: ['https://picsum.photos/seed/jobfinder1/800/450', 'https://picsum.photos/seed/jobfinder2/800/450'],
     liveUrl: 'https://job-finder-client.vercel.app',

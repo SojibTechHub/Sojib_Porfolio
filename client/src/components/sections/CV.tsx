@@ -32,7 +32,7 @@ export const CV = () => {
                 <div className="h-full flex flex-col">
                   <div className="bg-gradient-to-r from-[var(--color-accent)] to-purple-500 -mx-8 -mt-8 px-8 pt-8 pb-6 rounded-t-xl">
                     <h3 className="text-2xl font-display font-bold text-white">Sojib Ahmed</h3>
-                    <p className="text-white/80">MERN Stack Developer</p>
+                    <p className="text-white/80">Fullstack Developer</p>
                     <div className="flex items-center gap-4 mt-2 text-white/60 text-sm">
                       <span className="flex items-center gap-1"><Mail size={12} /> {SOCIAL_LINKS.email}</span>
                       <span className="flex items-center gap-1"><Phone size={12} /> {SOCIAL_LINKS.phone}</span>

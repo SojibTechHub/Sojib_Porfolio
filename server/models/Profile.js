@@ -2,7 +2,7 @@ import mongoose from 'mongoose';
 
 const profileSchema = new mongoose.Schema({
   name: { type: String, default: 'Sojib' },
-  role: { type: String, default: 'MERN Stack Developer' },
+  role: { type: String, default: 'Fullstack Developer' },
   bio: { type: String, default: '' },
   location: { type: String, default: 'Bangladesh' },
   availability: { type: Boolean, default: true },

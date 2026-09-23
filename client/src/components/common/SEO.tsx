@@ -7,9 +7,9 @@ interface SEOProps {
 }
 
 export const SEO: React.FC<SEOProps> = ({ title, description, image }) => {
-  const siteName = 'Sojib | MERN Stack Developer';
+  const siteName = 'Sojib | Fullstack Developer';
   const fullTitle = title ? `${title} | Sojib` : siteName;
-  const desc = description || 'Fullstack MERN Stack Developer portfolio showcasing projects, skills, and experience.';
+  const desc = description || 'Fullstack Developer portfolio showcasing projects, skills, and experience.';
   const img = image || '/og-image.png';
 
   return (

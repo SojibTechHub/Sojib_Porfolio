@@ -15,7 +15,7 @@ export const STATS = [
 ];
 
 export const ROLES = [
-  'MERN Stack Developer',
+  'Fullstack Developer',
   'Fullstack Web Developer',
   'React & Node.js Specialist',
   'JavaScript Developer',

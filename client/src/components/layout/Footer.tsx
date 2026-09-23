@@ -48,7 +48,7 @@ export const Footer = () => {
           <div className="col-span-2 md:col-span-1">
             <h3 className="text-2xl font-display font-bold gradient-text mb-3">Sojib Ahmed</h3>
             <p className="text-sm text-[var(--color-muted)] mb-4">
-              MERN Stack Developer from Rangpur, Bangladesh. Building modern web applications with passion.
+              Fullstack Developer from Rangpur, Bangladesh. Building modern web applications with passion.
             </p>
             <span className="inline-flex items-center gap-2 text-xs text-green-500 bg-green-500/10 px-3 py-1.5 rounded-full">
               <span className="w-2 h-2 rounded-full bg-green-500 animate-pulse-slow" />
@@ -81,7 +81,7 @@ export const Footer = () => {
       <div className="border-t border-[var(--color-border)]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-sm text-[var(--color-muted)]">
-            &copy; {new Date().getFullYear()} Sojib Ahmed. Built with MERN Stack.
+            &copy; {new Date().getFullYear()} Sojib Ahmed. Built with React & Node.js.
           </p>
           <div className="flex items-center gap-4">
             {socialLinks.map((link) => (

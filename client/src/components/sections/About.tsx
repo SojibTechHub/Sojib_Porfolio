@@ -6,7 +6,7 @@ import { Badge } from '../ui/Badge';
 import { SOCIAL_LINKS } from '../../utils/constants';
 
 const highlights = [
-  'Passionate MERN Stack Developer from Rangpur, Bangladesh',
+  'Passionate Fullstack Developer from Rangpur, Bangladesh',
   'Built 10+ fullstack web applications from scratch',
   'Expert in React, Node.js, MongoDB, and TypeScript',
   'SSC GPA 4.50 in Science from Rowmari High School',
@@ -50,7 +50,7 @@ export const About = () => {
                 <div className="absolute inset-1 rounded-full bg-gradient-to-br from-[var(--color-accent)] to-purple-600 p-1">
                   <img
                     src="/assets/images/profile-card.jpg"
-                    alt="Sojib Ahmed - MERN Stack Developer"
+                    alt="Sojib Ahmed - Fullstack Developer"
                     className="w-full h-full rounded-full object-cover ring-2 ring-white/80 shadow-2xl shadow-[var(--color-accent)]/20"
                     onError={(e) => {
                       const target = e.target as HTMLImageElement;
@@ -64,7 +64,7 @@ export const About = () => {
                 </div>
               </div>
               <h3 className="text-xl font-display font-bold">Sojib Ahmed</h3>
-              <Badge variant="accent" className="mt-2">MERN Stack Developer</Badge>
+              <Badge variant="accent" className="mt-2">Fullstack Developer</Badge>
               <div className="space-y-1.5 mt-3 text-sm text-[var(--color-muted)]">
                 <div className="flex items-center justify-center gap-2">
                   <MapPin size={14} />
@@ -129,7 +129,7 @@ export const About = () => {
                   I began my programming journey during my SSC years at Rowmari High School, where I discovered the magic of creating web pages with HTML and CSS. Initially drawn to the visual aspect of design, I quickly fell in love with how code could bring ideas to life. My first real project was a simple personal blog site, which sparked my interest in fullstack development.
                 </p>
                 <p className="text-[var(--color-text)] leading-relaxed mb-4">
-                  During my free time between classes and homework, I started learning JavaScript and React, gradually building more complex applications. My passion for building complete solutions led me to explore Node.js and MongoDB, eventually mastering the entire MERN stack. Each project teaches me something new, and I approach every challenge with a problem-solving mindset.
+                  During my free time between classes and homework, I started learning JavaScript and React, gradually building more complex applications. My passion for building complete solutions led me to explore Node.js and MongoDB, eventually mastering fullstack development across the entire frontend-to-backend spectrum. Each project teaches me something new, and I approach every challenge with a problem-solving mindset.
                 </p>
                 <div className="bg-[var(--color-surface)] rounded-xl p-4 border border-[var(--color-border)] mt-4">
                   <h4 className="text-sm font-semibold mb-2 text-[var(--color-accent)]">Early Learnings</h4>
@@ -166,7 +166,7 @@ export const About = () => {
             <div className="md:col-span-3 space-y-8">
               <div>
                 <p className="text-[var(--color-text)] leading-relaxed mb-4 text-lg">
-                  Hello! I am <span className="font-semibold gradient-text">Sojib Ahmed</span>, a passionate MERN Stack Developer from
+                  Hello! I am <span className="font-semibold gradient-text">Sojib Ahmed</span>, a passionate Fullstack Developer from
                   {' '}<span className="font-semibold">Rangpur, Bangladesh</span>. I specialize in building modern, scalable fullstack
                   web applications using React, Node.js, MongoDB, and TypeScript.
                 </p>
