@@ -17,8 +17,8 @@ const seed = async () => {
 
   await Profile.create({
     name: 'Sojib Ahmed',
-    role: 'Fullstack Developer',
-    bio: 'I am a passionate Fullstack Developer from Rangpur, Bangladesh. I build modern, scalable fullstack web applications using React, Node.js, MongoDB, and TypeScript. I love turning complex problems into simple, beautiful, and intuitive solutions. Currently exploring advanced React patterns and cloud deployment.',
+    role: 'MERN Stack Developer',
+    bio: 'I am a passionate MERN Stack Developer from Rangpur, Bangladesh. I build modern, scalable fullstack web applications using React, Node.js, MongoDB, and TypeScript. I love turning complex problems into simple, beautiful, and intuitive solutions. Currently exploring advanced React patterns and cloud deployment.',
     location: 'Rangpur, Bangladesh',
     availability: true,
     email: 'sojibahmedshorif998@gmail.com',
@@ -36,7 +36,7 @@ const seed = async () => {
     {
       title: 'Job Finder Platform',
       description: 'A fullstack job search and recruitment platform where employers can post jobs and candidates can apply. Features include resume upload, job filtering, and real-time application tracking.',
-      longDescription: '<h2>Job Finder Platform</h2><p>A comprehensive job search and recruitment platform built end-to-end with React, Node.js and MongoDB. Employers can create company profiles, post job listings, and manage applications. Job seekers can create profiles, upload resumes, search and filter jobs, and apply with one click.</p><h3>Key Features</h3><ul><li>User authentication (Employer & Job Seeker roles)</li><li>Job posting with rich text descriptions</li><li>Resume upload and management</li><li>Advanced job search and filtering</li><li>Real-time application tracking</li><li>Responsive design</li></ul>',
+      longDescription: '<h2>Job Finder Platform</h2><p>A comprehensive job search and recruitment platform built with the MERN stack. Employers can create company profiles, post job listings, and manage applications. Job seekers can create profiles, upload resumes, search and filter jobs, and apply with one click.</p><h3>Key Features</h3><ul><li>User authentication (Employer & Job Seeker roles)</li><li>Job posting with rich text descriptions</li><li>Resume upload and management</li><li>Advanced job search and filtering</li><li>Real-time application tracking</li><li>Responsive design</li></ul>',
       techStack: ['React', 'Node.js', 'MongoDB', 'Express', 'JWT', 'Tailwind CSS'],
       thumbnail: '',
       images: [],
@@ -118,15 +118,15 @@ const seed = async () => {
   await Testimonial.insertMany([
     { name: 'Md. Hasan Ali', role: 'Client', company: '', avatar: '', rating: 5, review: 'Sojib built an amazing job finder platform for us. His React skills are top-notch and he delivered everything on time. Highly recommended!', visible: true },
     { name: 'Fatema Khatun', role: 'Project Partner', company: '', avatar: '', rating: 5, review: 'Working with Sojib on the pet adoption project was a great experience. He writes clean code and has excellent problem-solving abilities.', visible: true },
-    { name: 'Rakib Hasan', role: 'Fellow Developer', company: '', avatar: '', rating: 4, review: 'Sojib is a talented fullstack developer. His understanding of fullstack architecture and attention to detail really stand out.', visible: true },
+    { name: 'Rakib Hasan', role: 'Fellow Developer', company: '', avatar: '', rating: 4, review: 'Sojib is a talented MERN stack developer. His understanding of fullstack architecture and attention to detail really stand out.', visible: true },
   ]);
 
   await Blog.insertMany([
     {
-      title: 'Getting Started with Fullstack Development',
+      title: 'Getting Started with MERN Stack',
       content: '<h2>Introduction</h2><p>The MERN stack is a powerful combination for building modern web applications. In this post, I will walk you through setting up your first MERN application.</p><h2>What is MERN?</h2><p>MERN stands for MongoDB, Express.js, React, and Node.js. Each technology plays a specific role in the stack.</p><h2>Setting Up Your Project</h2><p>Start by creating a new React app with Vite, set up your Express server, connect MongoDB with Mongoose, and build your first API endpoint.</p><h2>Conclusion</h2><p>The MERN stack is an excellent choice for fullstack JavaScript development.</p>',
       excerpt: 'Learn how to build your first fullstack application with MongoDB, Express, React, and Node.js from scratch.',
-      coverImage: '', category: 'Development', tags: ['Fullstack', 'React', 'Node.js', 'MongoDB'], published: true, readTime: 5, author: 'Sojib Ahmed',
+      coverImage: '', category: 'Development', tags: ['MERN', 'React', 'Node.js', 'MongoDB'], published: true, readTime: 5, author: 'Sojib Ahmed',
     },
     {
       title: 'Why React is My Go-To Framework',
